@@ -8,6 +8,8 @@ export default function App() {
 
   let url = `https://jsonplaceholder.typicode.com/users`;
 
+  console.log(filteredResults);
+
   //   async/await
   useEffect(() => {
     axios.get(url).then((response) => {
