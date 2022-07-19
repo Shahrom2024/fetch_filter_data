@@ -44,6 +44,9 @@ input {
   position: relative;
   display: inline-block;
 }
+.card:hover {
+  box-shadow: 1px 1px 3px 3px rgb(165, 163, 163);
+}
 
 .card__username {
   color: rgb(68, 174, 235) !important;
