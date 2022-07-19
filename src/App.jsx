@@ -32,7 +32,7 @@ export default function App() {
     <div className="container">
       <input
         className="input"
-        placeholder="Введите автора"
+        placeholder="Search..."
         value={searchInput}
         onChange={handleOnChange}
       />
@@ -48,9 +48,7 @@ export default function App() {
             );
           })
         ) : (
-          <h4 className="notFound_text">
-            По вашему поиску ничего не найдено :(
-          </h4>
+          <h4 className="notFound_text">Nothing found for your search :(</h4>
         )}
       </div>
     </div>
