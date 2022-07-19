@@ -1,0 +1,71 @@
+.container {
+  background-color: aliceblue;
+  padding: 50px;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+input {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  line-height: 1.5715;
+  min-width: 0;
+  padding: 4px 11px;
+  position: relative;
+  transition: all 0.3s;
+  text-align: start;
+  width: 100%;
+}
+
+.input {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 263px;
+  height: 32;
+}
+
+.card {
+  width: 298px;
+  margin-top: 14px;
+  margin-bottom: 12px;
+  margin-right: 14px;
+  padding: 24px;
+  background: #fff;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  border-radius: 2px;
+  cursor: pointer;
+  line-height: 1.5715;
+  position: relative;
+  display: inline-block;
+}
+
+.card__username {
+  color: rgb(68, 174, 235) !important;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.card__name {
+  color: #b0bfc4 !important;
+  margin-top: 12px;
+}
+
+h4 {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+}
+
+.notFound_text {
+  display: flex;
+  justify-content: center;
+  color: #b0bfc4 !important;
+}
