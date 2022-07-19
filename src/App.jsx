@@ -10,7 +10,6 @@ export default function App() {
 
   console.log(filteredResults);
 
-  //   async/await
   useEffect(() => {
     axios.get(url).then((response) => {
       setFilteredResults(response.data);
