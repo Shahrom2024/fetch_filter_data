@@ -36,7 +36,10 @@ export default function App() {
         value={searchInput}
         onChange={handleOnChange}
       />
-      <div className="count">{filteredUsers.length}</div>
+      <div className="count">
+        {" "}
+        {filteredUsers.length > 0 ? filteredUsers.length : ""}{" "}
+      </div>
       <div>
         {filteredUsers.length > 0 ? (
           filteredUsers.map((item) => {
