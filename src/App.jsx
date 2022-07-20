@@ -8,8 +8,6 @@ export default function App() {
 
   let url = `https://jsonplaceholder.typicode.com/users`;
 
-  console.log(filteredResults);
-
   useEffect(() => {
     axios.get(url).then((response) => {
       setFilteredResults(response.data);
@@ -24,7 +22,10 @@ export default function App() {
   const filteredUsers = filteredResults.filter((user) => {
     return (
       searchInput === "" ||
-      user.name.toLowerCase().includes(searchInput.toLocaleLowerCase())
+      Object.values(user)
+        .join("")
+        .toLowerCase()
+        .includes(searchInput.toLowerCase())
     );
   });
 
@@ -37,8 +38,7 @@ export default function App() {
         onChange={handleOnChange}
       />
       <div className="count">
-        {" "}
-        {filteredUsers.length > 0 ? filteredUsers.length : ""}{" "}
+        {filteredUsers.length > 0 ? filteredUsers.length : ""}
       </div>
       <div>
         {filteredUsers.length > 0 ? (
