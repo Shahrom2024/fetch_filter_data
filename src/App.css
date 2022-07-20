@@ -32,11 +32,8 @@ input {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  width: 25px;
-  height: 25px;
-  border: 1px solid #686666;
-  border-radius: 5px;
-  padding: 6px;
+  width: 150px;
+  height: 30px;
   margin-top: 10px;
   text-align: center;
 }
